@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'mercedes';
+    src: url('./assets/mercedesFont.ttf') format('truetype');
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5px;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 0px;
+}
