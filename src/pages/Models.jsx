@@ -5,13 +5,13 @@ import Footer from '../components/footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ModelCardData from '../components/ModelCardData';
 import ModelCard from '../components/ModelCard';
-import Model360View from '../components/Model360View';
 import ImageSlider from '../components/InteriorSlider';
 import ModelSpecs from '../components/ModelSpecs';
 import {GiSteeringWheel} from 'react-icons/gi';
 import {AiOutlineArrowRight} from 'react-icons/ai';
 import {ImLocation2} from 'react-icons/im';
-import {BsBook, BsBookHalf} from 'react-icons/bs';
+import {BsBookHalf} from 'react-icons/bs';
+import CarSlider from '../components/360View';
 
 
 function Models() {
@@ -78,6 +78,9 @@ function Models() {
           <p className='text-sm text-gray-500 pb-2 w-3/4'>Exterior</p>
           <p className='text-2xl font-mercedes text-zinc-900 pb-5'>The Exterior of the S-Class Saloon.</p>
           <p className='text-sm text-gray-500 pb-10 w-3/4'>Superior look and a luxurious feeling of spaciousness in ideal harmony: the design idiom of sensuous purity in its most modern form.</p>
+          <div className='w-screen flex justify-center'>
+            <CarSlider></CarSlider>
+          </div>
           <Swiper spaceBetween={20} slidesPerView={3} navigation  className="mySwiper">
             {ModelCardData.map((card, index) => (
               <SwiperSlide key={index}>

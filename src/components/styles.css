@@ -1,0 +1,21 @@
+.RotationContainer {
+    width: 100vw;
+    height: 70vh;
+    object-fit: contain;
+    position: relative;
+  }
+  
+  .RotationContainer img {
+    position: absolute;
+    width: inherit;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    pointer-events: none;
+    justify-content: center;
+  }
+  
+  .RotationContainer img.visible {
+    visibility: visible;
+  }
